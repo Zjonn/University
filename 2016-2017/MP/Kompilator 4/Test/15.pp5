@@ -1,0 +1,1 @@
+input x in if if x>0 then true else false then x + x else 0

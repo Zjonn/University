@@ -1,0 +1,9 @@
+def main(A) = 
+	if [] then 1235,12
+	else tri(A)
+
+def tri(A)=
+	let B = A,A*A,2 in
+	A
+	
+

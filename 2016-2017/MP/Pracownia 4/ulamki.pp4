@@ -1,0 +1,7 @@
+input a b c d in
+  let frac1 = a div b in
+	let frac2 = c div d in
+	  if frac1 <> frac2 then 0
+	  else 
+		if frac1 * b = frac2 * d then 1
+		else 0

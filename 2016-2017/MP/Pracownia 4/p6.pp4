@@ -1,0 +1,6 @@
+input x in
+	let x = x * x in
+	let x = x * x in	
+	let x = x * x in
+	let x = x * x in
+	x

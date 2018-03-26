@@ -1,0 +1,10 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "files.associations": {
+        "stdio.h": "c",
+        "unordered_map": "cpp",
+        "utility": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp"
+    }
+}

@@ -1,0 +1,4 @@
+input x y in
+	if x + 7 >= y - 8 and x + -7 = 5 or false and not false 
+	then 42 
+	else 5 div 0

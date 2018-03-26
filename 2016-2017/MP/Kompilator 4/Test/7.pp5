@@ -1,0 +1,1 @@
+input x in if x>5 then 3 else 6

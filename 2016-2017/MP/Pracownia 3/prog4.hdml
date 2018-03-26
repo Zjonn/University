@@ -1,0 +1,13 @@
+def main(A) = 
+	if [] then 1235,12
+	else tri(A)
+
+tri(A)=
+	let B = A,A**A,2 in
+	if B = Triss 
+	then Triss
+	else if B = 2,4,2
+	then 1
+	else B[~~~Triss..A|A]
+	
+

@@ -1,0 +1,1 @@
+input x in let x = 5 in if x = 6 and x <=6  then 10 else 0

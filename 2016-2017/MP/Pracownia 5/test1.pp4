@@ -1,0 +1,5 @@
+match [1,2]:int list with
+|[] -> 0
+| x::x -> match x with
+    |[]-> -1
+    |x::y -> x

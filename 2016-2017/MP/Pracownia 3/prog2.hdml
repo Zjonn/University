@@ -1,0 +1,11 @@
+def main(A,B)=
+	let C1,C2,C3 = sth(A) in
+	if A=>B then C2,C3,B
+	else A,C1,C2
+
+def sth(A) = 
+	A,A&A,A|A
+
+
+	
+

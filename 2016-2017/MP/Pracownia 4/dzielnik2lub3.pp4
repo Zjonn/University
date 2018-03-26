@@ -1,0 +1,9 @@
+input x in
+  let a = if x mod 2 = 0 then true else false in
+	let b = if x mod 3 = 0 then true else false in
+	  if not (a and b) and not(not a and not b) then 
+		if a then 2
+		else 3
+	  else 
+		if a and b then 6
+		else 1

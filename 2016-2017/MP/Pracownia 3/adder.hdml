@@ -1,0 +1,45 @@
+def half_adder(A, B) =
+  A&B, A^B
+
+def full_adder(A, B, C) =
+  let C1, S1 = half_adder(A, B) in
+  let C2, S2 = half_adder(S1, C) in
+  C1|C2, S2
+
+def ripple_carry_adder(A, B, C) =
+  let N = #A in
+  if N = 0 then C, []
+  else
+    let C1, S1 = full_adder(A[0], B[0], C) in
+    let C2, S2 = ripple_carry_adder(A[N-1..1], B[N-1..1], C1) in
+    C2, S2@S1
+
+def log_depth_adder_aux(A, B, C) =
+  let N = #A in
+  if N = 1 then
+    let P = A^B in
+    P, A&B, P^C
+  else
+    let H = N / 2  in
+    let P1, G1, S1 = log_depth_adder_aux(A[H-1..0], B[H-1..0], C) in
+    let P2, G2, S2 = log_depth_adder_aux(A[N-1..H], B[N-1..H], G1 | C&P1) in
+    P1&P2, G2 | G1&P2, S2@S1
+
+def log_depth_adder(A, B, C) =
+  if #A = 0 then C, []
+  else
+    let P, G, S = log_depth_adder_aux(A, B, C) in
+    G | P&C, S
+
+def or_of(A) =
+  let N = #A in
+  if N = 0 then [0]
+  else if N = 1 then A
+  else
+    let H = N / 2 in
+    or_of(A[H-1..0]) | or_of(A[N-1..H])
+
+def main(A, B, C) =
+  let C1, S1 = ripple_carry_adder(A, B, C) in
+  let C2, S2 = log_depth_adder(A, B, C) in
+  ~((C1 ^ C2) | or_of(S1 ^ S2))

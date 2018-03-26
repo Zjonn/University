@@ -1,0 +1,10 @@
+input a b in
+    if a >= b and a <= b
+	then 
+	  let c = 4
+      in a + b + c
+    else
+      let c = a + b
+      in if c > b
+         then c
+         else b

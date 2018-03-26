@@ -1,0 +1,18 @@
+input o in
+  let a = if o mod 2 = 0 then true else false in
+	let b = if o mod 3 = 0 then true else false in
+	  let c = if o mod 5 = 0 then true else false in
+		let d = if o mod 7 = 0 then true else false in
+		  let e = if o mod 11 = 0 then true else false in
+			let x = a or b or c or d or e in 
+			  let y = (a and b) or (b and c) or (c and d) or (d and e) in
+				let z = (a and b and c) or (b and c and d) or (c and d and e) in
+				  let v = (a and b and c and d) or (b and c and d and e) in
+					let u = a and b and c and d and e in
+					  if u then 5
+						else if v then 4
+						  else if z then 3
+							else if y then 2
+							  else if x then 1
+								else 0
+  

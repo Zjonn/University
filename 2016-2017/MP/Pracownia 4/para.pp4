@@ -1,0 +1,8 @@
+input k1 nr1 k2 nr2 in
+  if not(k1 = k2) then 0
+  else 
+	if (nr1 = 12 and nr2 = 13) or (nr1 = 13 and nr2 = 12) then 1
+	else 0
+	
+	
+	  

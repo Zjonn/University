@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="Grid class">
+    <HelpKINode Title="Grid Class" Url="html/abab33d6-f5da-3ba2-72da-5548c02fcc0b.htm" />
+    <HelpKINode Title="about Grid class" Url="html/abab33d6-f5da-3ba2-72da-5548c02fcc0b.htm" />
+    <HelpKINode Title="constructor" Url="html/ce981f75-c2c1-015d-9063-f49b54ac0527.htm" />
+    <HelpKINode Title="fields" Url="html/451c3589-771c-08a1-da5c-839386497853.htm" />
+    <HelpKINode Title="methods" Url="html/e4d2d239-c8b0-c9df-660e-58eb270345aa.htm" />
+    <HelpKINode Title="properties" Url="html/1b9b4905-e63d-5bb2-fcd5-6a9da9e956f3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Grid namespace" Url="html/143bc0b3-98d6-7306-e112-0277a230452c.htm" />
+  <HelpKINode Title="Grid.Grid class" Url="html/abab33d6-f5da-3ba2-72da-5548c02fcc0b.htm" />
+  <HelpKINode Title="Grid.Grid constructor" Url="html/ce981f75-c2c1-015d-9063-f49b54ac0527.htm" />
+  <HelpKINode Title="Grid.Item property" Url="html/62962245-b1b1-7671-9041-eb062dad7520.htm" />
+  <HelpKINode Title="Grid.kolumns field" Url="html/6e83c65c-adf0-755f-9934-c86b028d2d9c.htm" />
+  <HelpKINode Title="Grid.rows field" Url="html/48e3d2c7-0348-bb7f-d339-744f31e21818.htm" />
+  <HelpKINode Title="Grid.tab field" Url="html/3107572c-8e06-7b2d-7575-33f25d5b6a26.htm" />
+  <HelpKINode Title="Item property" Url="html/62962245-b1b1-7671-9041-eb062dad7520.htm" />
+  <HelpKINode Title="kolumns field" Url="html/6e83c65c-adf0-755f-9934-c86b028d2d9c.htm" />
+  <HelpKINode Title="Main method" Url="html/95e479c9-1bc6-de66-3a63-f7c5b56078e7.htm" />
+  <HelpKINode Title="podzielna method" Url="html/e4672793-8c4b-1159-2723-c6d87411206f.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="Program Class" Url="html/e0d4428d-290b-6675-6784-7176bc5f3025.htm" />
+    <HelpKINode Title="about Program class" Url="html/e0d4428d-290b-6675-6784-7176bc5f3025.htm" />
+    <HelpKINode Title="constructor" Url="html/6755fefc-9efe-0cc4-a833-909d0c34e2ed.htm" />
+    <HelpKINode Title="methods" Url="html/4c62140c-8960-71a5-620f-a1c74d4405c2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.Main method" Url="html/95e479c9-1bc6-de66-3a63-f7c5b56078e7.htm" />
+  <HelpKINode Title="Program.podzielna method" Url="html/e4672793-8c4b-1159-2723-c6d87411206f.htm" />
+  <HelpKINode Title="Program.Program constructor" Url="html/6755fefc-9efe-0cc4-a833-909d0c34e2ed.htm" />
+  <HelpKINode Title="ProstyAlgorytm namespace" Url="html/1de4f395-69db-570e-44e5-042c46a06a98.htm" />
+  <HelpKINode Title="ProstyAlgorytm.Program class" Url="html/e0d4428d-290b-6675-6784-7176bc5f3025.htm" />
+  <HelpKINode Title="rows field" Url="html/48e3d2c7-0348-bb7f-d339-744f31e21818.htm" />
+  <HelpKINode Title="tab field" Url="html/3107572c-8e06-7b2d-7575-33f25d5b6a26.htm" />
+</HelpKI>

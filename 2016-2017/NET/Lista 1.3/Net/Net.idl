@@ -1,0 +1,35 @@
+// Net.idl : IDL source for Net
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Net.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(CBFED17E-D924-4DB8-AF16-1CEF082D9310),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IPrime : IDispatch{
+	[id(1)] HRESULT Prime([in] int x, [out, retval] int* ret);
+};
+[
+	uuid(C3B9B882-34C0-4A62-B33C-70EC69ABD8EE),
+	version(1.0),
+]
+library NetLib
+{
+	importlib("stdole2.tlb");
+	[		
+		uuid(67E51884-9E69-422D-BDAB-4FE84DC819B7)		
+	]
+	coclass Prime
+	{
+		[default] interface IPrime;
+	};
+};
+

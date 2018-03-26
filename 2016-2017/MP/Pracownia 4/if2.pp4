@@ -1,0 +1,4 @@
+input x in
+  let a = x < 6 in
+	if a then x
+	else x mod 6

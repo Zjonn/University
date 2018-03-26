@@ -1,0 +1,44 @@
+2. (1pkt) Napisz w pseudokodzie procedury:
+• przywracania porządku
+• usuwania minimum
+• usuwania maksimum
+z kopca minimaksowego. Przyjmij, że elementy tego kopca pamiętane są w jednej tablicy
+. Użyj pseudokodu na takim samym poziomie szczegóªowo±ci, na jakim
+zostały napisane w Notatce nr 2 odpowiednie procedury dla zwykłego kopca.
+
+Jak trzymać kopiec minmax w tablicy?
+[Korzeń kopca L,korzeń kopca R,L-left,L-right,R-left,R-right,....]
+
+Pozycjonie:
+dzieci L 2^i*2,       2^i*2+1
+dzieci R 2^i*2 + 2^i  2^i*2 + 2^i + 1
+
+[L,R,L,L,R,R,LLLL,RRRR,...,L_m...L_m]
+
+przywracanie porządku
+
+def zmien-elementy(K[1,n], i, u)
+    x = K[i]
+    K[i] = u
+    if u < x    then przesun_nizej(K,i)
+                else przesun_wyzej(K,i)
+
+
+def przesun_nizej(K[1..m..n],i)
+    k = i
+    while j == k:
+        j = k
+        v = 0
+        if k > m:
+            v = j + j/2
+        else:
+            v = 2j 
+
+        if v < n and K[v]>K[k] then k = v
+        if v < m and K[v+1]>K[V] then k = v + 1
+        swap(K[J],K[k])
+
+
+
+
+

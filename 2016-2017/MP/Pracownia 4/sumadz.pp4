@@ -1,0 +1,6 @@
+input x y in
+  let d1 = x mod 10 in
+	let c1 = y mod 10 in
+	  let d2 = ( x div 10 ) mod 10 in
+		let c2 = ( y div 10 ) mod 10 in
+		  d2 + c2

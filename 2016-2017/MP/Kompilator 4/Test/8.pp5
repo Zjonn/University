@@ -1,0 +1,1 @@
+input x y in if x>y or x<y then 1 else 0

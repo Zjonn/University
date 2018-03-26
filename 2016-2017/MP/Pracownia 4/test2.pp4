@@ -1,0 +1,20 @@
+input a b c d in
+   let a = if b * c div d > a mod b
+   then c * d mod b
+   else a mod b
+   in
+   if not (if a - b > d 
+          then true
+          else false)
+    then
+	let x = if a > b
+	        then a
+			else b
+	+ (if b > c
+	  then b + c + (let y = d + a in y)
+	  else
+	  (let a = b in a div b))
+	in
+	a - b - c - d - x
+	else
+	0

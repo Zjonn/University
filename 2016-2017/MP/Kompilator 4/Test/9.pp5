@@ -1,0 +1,1 @@
+input x y z in if x>y or x<y and z = 5 then 1 else 0

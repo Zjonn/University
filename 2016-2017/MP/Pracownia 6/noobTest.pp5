@@ -1,0 +1,5 @@
+fun twice(x : int ) : int = 2 * x
+
+fun ord( x : (int -> int) * int ) : int = 42 + (fst x)(snd x)
+
+input a in ord(twice,a)

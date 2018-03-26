@@ -1,0 +1,5 @@
+input x y in 
+	let z = 6 in
+	if x>y and z<y
+	then 1
+	else 0

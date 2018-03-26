@@ -1,0 +1,10 @@
+input x y z in
+	let x = x * x in
+	if x = y 
+	then 
+		let y = y mod y in
+		z div y
+	else
+		let z = z div z in
+		let z = 42 * z in
+		z

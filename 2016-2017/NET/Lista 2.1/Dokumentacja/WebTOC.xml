@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="a0468082-c8f0-479b-b817-8ad00062d96c" Title="Grid" Url="html/143bc0b3-98d6-7306-e112-0277a230452c.htm">
+    <HelpTOCNode Id="f270134f-8857-4f94-92be-4f8284eb2e1e" Title="Grid Class" Url="html/abab33d6-f5da-3ba2-72da-5548c02fcc0b.htm">
+      <HelpTOCNode Title="Grid Constructor " Url="html/ce981f75-c2c1-015d-9063-f49b54ac0527.htm" />
+      <HelpTOCNode Id="e61967e6-c1c8-4138-bdcb-30d61624c1b0" Title="Grid Fields" Url="html/451c3589-771c-08a1-da5c-839386497853.htm">
+        <HelpTOCNode Title="kolumns Field" Url="html/6e83c65c-adf0-755f-9934-c86b028d2d9c.htm" />
+        <HelpTOCNode Title="rows Field" Url="html/48e3d2c7-0348-bb7f-d339-744f31e21818.htm" />
+        <HelpTOCNode Title="tab Field" Url="html/3107572c-8e06-7b2d-7575-33f25d5b6a26.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="Grid Methods" Url="html/e4d2d239-c8b0-c9df-660e-58eb270345aa.htm" />
+      <HelpTOCNode Id="72a855a5-d2f1-4765-9727-fa4b2255a82f" Title="Grid Properties" Url="html/1b9b4905-e63d-5bb2-fcd5-6a9da9e956f3.htm">
+        <HelpTOCNode Id="27f6f77f-8587-4184-a4bf-7a163502b1c7" Title="Item Property " Url="html/62962245-b1b1-7671-9041-eb062dad7520.htm">
+          <HelpTOCNode Title="Item Property (Int32)" Url="html/20a0d8b6-409d-6f4e-c8a5-dcaa763a2ba3.htm" />
+          <HelpTOCNode Title="Item Property (Int32, Int32)" Url="html/c71b8e43-df2b-a585-21f1-45a81b7f5197.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="60f569d6-3ada-4f08-b753-087400360f2c" Title="ProstyAlgorytm" Url="html/1de4f395-69db-570e-44e5-042c46a06a98.htm">
+    <HelpTOCNode Id="78f13f29-f7da-418b-b2ef-ad3b6544b2d2" Title="Program Class" Url="html/e0d4428d-290b-6675-6784-7176bc5f3025.htm">
+      <HelpTOCNode Title="Program Constructor " Url="html/6755fefc-9efe-0cc4-a833-909d0c34e2ed.htm" />
+      <HelpTOCNode Id="19825380-ca25-4ad3-a950-ef8b234165ef" Title="Program Methods" Url="html/4c62140c-8960-71a5-620f-a1c74d4405c2.htm">
+        <HelpTOCNode Title="Main Method " Url="html/95e479c9-1bc6-de66-3a63-f7c5b56078e7.htm" />
+        <HelpTOCNode Title="podzielna Method " Url="html/e4672793-8c4b-1159-2723-c6d87411206f.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

@@ -1,0 +1,10 @@
+fun fib(n : int) : int =
+	if n = 0 then 0 else
+	if n = 1 then 1 else
+	fib(n-2) + fib(n-1)
+
+
+input n in
+  if n > 0
+     then fib(n)
+     else 0

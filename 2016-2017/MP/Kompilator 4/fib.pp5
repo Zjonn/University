@@ -1,0 +1,5 @@
+input x y in 
+	let x = false in
+	if x and true and true
+	then 1
+	else 0

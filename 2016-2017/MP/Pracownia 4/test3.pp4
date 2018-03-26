@@ -1,0 +1,21 @@
+input q w e r t y in
+ let z = q + w + e in
+  let m = r + t + y in
+   if q > w or q < w
+   then let a = q + w - e
+        in if a > q
+		   then a
+		   else a + q
+   else let a = e + r - t
+        in if a > q
+		   then a
+		   else let b = t + y
+		        in if a > b
+				   then a + b
+				   else let c = q + w
+				        in if c > q
+						   then a + b + c
+						   else c
+						+ (if q + w + e > r + t + y
+						  then r + t + y
+						  else q + w + e)

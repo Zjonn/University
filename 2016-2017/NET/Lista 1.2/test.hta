@@ -1,0 +1,61 @@
+<CODE><HTML>
+<HEAD>
+<TITLE>Moja aplikacja</TITLE>
+<HTA:APPLICATION ID=”obiektAplikacji”
+APPLICATIONNAME=”mojaAplikacja”
+BORDERSTYLE=”normal”
+WINDOWSTATE=”normal”
+/>
+</HEAD>
+
+<script language="vbscript">
+	Const ForWriting = 2
+	
+	Dim objFSO, objFile, strFileName
+	
+	strFileName = "/textfile.txt"
+	
+	Sub init	
+		Set objFSO = CreateObject("Scripting.FileSystemObject")
+		
+		Set objFile = objFSO.OpenTextFile(strFileName, 2, true)
+		Set objShell = CreateObject("WScript.Shell")
+	End Sub
+	
+	Sub Submitarea
+		strFileName = fi.Value
+		init
+		
+		sTxtarea = fn.Value & " " & ln.Value & " " & dateid.Value
+		objFile.Write sTxtarea & vbCRLF
+		MsgBox "Your text has been added to " & strFileName, 64, "Textarea Input"
+	End Sub
+	
+	</script>
+	
+	</head>
+
+<body>
+
+  First name:<br>
+  <input type="text" id="fn" name="firstname"><br>
+  Last name:<br>
+  <input type="text" id="ln" name="lastname"><br>
+  Date:<br>
+  <input type="date" id="dateid" data-date="" data-date-format="DD MMMM YYYY" value="2015-08-09">
+  
+
+
+ <div>
+   Save to File:<br>
+   <input type=file id="fi" size=40 
+     title="Press Browse to select a file"><br>
+ </div>
+					
+<input type="button" value="Zapisz" name="run_button"  onClick="Submitarea"><p> 
+
+
+
+</body>
+
+</HTML></CODE>
