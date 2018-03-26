@@ -1,12 +1,12 @@
-# University
-
-## 2016-2017
-- [MP](2016-2017/MP)
-- [.NET](2016-2017/NET)
-- [PO](2016-1017/PO)
-
-## 2017-2018
-- [AISD](2017-2018/Lato/AISD)
-- [ASK](2017-2018/Lato/ASK)
-- [Systemy wbudowane](2017-2018/Zima/Wbudowane)
-- [Unity](2017-2018/Zima/Unity)
+## Lista zadań nr 3
+1. Zbuduj układ dostosowujący (średnie) natężenie światła diody do natężenia światła panującego w otoczeniu (im ciemniej tym dioda powinna jaśniej świecić). Do pomiaru natężenia padającego światła należy wykorzystać fotorezystor (LDR) i ADC. Aby otrzymać maksymalną ilość punktów, należy zadbać o liniowość pomiaru od rezystancji fotorezystora, na jeden z dwóch sposobów: 
+    - Mierzyć fotorezystor przez dzielnik napięcia (fotorezystor szeregowo z rezystorem o podobnej rezystancji) używając jako Aref napięcia zasilająego, obliczać w programie wartość rezystancji ze zmierzonej wartości napięcia (rozwiązanie programowe),
+    - Mierzyć fotorezystor przy użyciu źródła prądowego, używając jako Aref wbudowanego napięcia referencyjnego 1.1V (rozwiązanie sprzętowe).
+##### Rezystancja fotorezystora maleje liniowo ze wzrostem natężenia światła. [3]
+2. Termistor NTC zmienia rezystancję w zależności od temperatury. Jego rezystancja zależy od temperatury wzorem R=R0 exp(-B(1/T0 - 1/T)), gdzie:
+    - R0 to rezystancja termistora w temperaturze T0 (w kelwinach),
+    - T to bieżąca temperatura termistora (w kelwinach),
+    - B to tak zwana stała termistora.
+#### Mierz rezystancję termistora przez ADC wybraną przez siebie metodą (możliwości jak w zadaniu 1). Wykonując pomiary w znanych temperaturach określ stałą B swojego termistora. Napisz program, który będzie regularnie (np. co 1 sekundę) mierzył rezystancję termistora i wypisywał przez UART wynik pomiaru temperatury (w stopniach Celsjusza). [4]
+3. Trzynóżkowy zintegrowany termometr MCP9700 (w zestawie) wytwarza napięcie liniowo proporcjonalne do temperatury: 10 miliwoltów na stopień Celsjusza, 500 miliwoltów przy temperaturze 0 stopni. Wykonuj pomiary używając wbudowanego napięcia referencyjnego (Aref) 1.1V dla zwiększonej dokładności. Wykonaj prosty termostat. W tym celu zbuduj układ z załączonego obrazka. Układ grzałki powinien składać się z kilku (2 do 4) rezystorów o wartości 50 do 200 om, rezystory powinny być połączone równolegle i przylegać do układu termometru. Działanie grzałki należy przetestować: włączona (5v na pinie sterującym) powinna być ciepła w dotyku. Napisz program, który utrzymuje ustaloną temperaturę termometru (np. 30 stopni). Niech działa on na zasadzie histerezy: grzałka powinna być włączona aż do osiągnięcia ustalonej temperatury, po czym należy ją wyłączyć i zaczekać, aż temperatura trochę spadnie (np. o pół stopnia), i dopiero wtedy ponownie włączyć grzałkę. Stan grzałki powinien być sygnalizowany przez diodę świecącą, bieżącą wartość temperatury należy wypisywac przez UART. [4]
+4. Zmierz za pomocą ADC napięcie zasilające. Aby to osiągnąć, ustaw napięcie referencyjne (Aref) na napięcie zasilające, zaś multiplekser ADC skonfiguruj, aby mierzyć wbudowane napięcie referencyjne 1.1V. Wyliczaj w programie wartość napięcia zasilającego (w woltach) i wypisuj przez UART (powinno wynosić około 5V). Złóż na płytce stykowej grzałkę z zadania 3 (patrz ilustracja, tylko układ po lewej). Włączaj i wyłączaj grzałkę co sekundę; włączenie grzałki powinno powodować zauważalny spadek zmierzonego napięcia zasilającego. [3] (Wniosek z zadania: wyniki pomiarów ADC z Aref na napięciu zasilającym mogą zależeć od obciążenia linii zasilającej.)

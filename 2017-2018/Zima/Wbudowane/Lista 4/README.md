@@ -1,12 +1,8 @@
-# University
-
-## 2016-2017
-- [MP](2016-2017/MP)
-- [.NET](2016-2017/NET)
-- [PO](2016-1017/PO)
-
-## 2017-2018
-- [AISD](2017-2018/Lato/AISD)
-- [ASK](2017-2018/Lato/ASK)
-- [Systemy wbudowane](2017-2018/Zima/Wbudowane)
-- [Unity](2017-2018/Zima/Unity)
+## Lista zadań nr 4
+1. Skonfiguruj wybrany timer, aby przepełniał się co sekundę. Wykorzystując przerwania napisz program, który realizuje dwie funkcje:
+    - Co sekundę przez UART ma być wypisywana liczba sekund, które minęły od ostatniego resetu;
+    - Co sekundę powinna krótko (np. 1/20 sekundy) mignąć dioda świecąca.
+##### Zadbaj o to, aby program nie wykorzystywał aktywnego czekania; czas pomiędzy zdarzeniami procesor powinien być uśpiony w celu redukcji poboru prądu. (Czekanie 1/20 sekundy przez _delay_ms, oraz czekanie na dostępność UART do wysłania kolejnego znaku w pętli while, są aktywnym czekaniem.) Każda z powyższych funkcji liczy się za 1 punkt z całości. [3]
+2. Wykorzystując przerwanie timera, i nie wykorzystując przerwania od przycisków, napisz program, który zapamiętuje naciśnięcia i zwolnienia przycisku przez użytkownika, i odtwarza je zapalając i gasząc diodę z 1 sekundowym opóźnieniem. Główna pętla programu powinna zawierać wyłącznie nieskończoną pętlę z instrukcją uśpienia; logika programu powinna być w procedurze obsługi przerwania timera. [2]
+3. Napisz program echo używający UART: odebrane znaki powinny być wysyłane na wyjście w kolejności odebrania. Nie wykorzystuj standardowego wejścia/wyjścia C, używaj bezpośrednio rejestru UDR0. Zapewnij maksymalną energooszczędność rozwiązania – należy wykorzystać przerwania UART, uśpić mikrokontroler w głównej pętli programu oraz wyłączyć zbędne podzespoły (timery, SPI, TWI, ADC). [2]
+4. Napisz program, który zademonstruje wpływ trybu ADC Noise Reduction na dokładność pomiarów przy użyciu ADC. Skonfiguruj przetwornik analogowo-cyfrowy, aby przy użyciu napięcia zasilania jako Aref mierzył wbudowane napięcie referencyjne 1.1V. W programie wykonaj dwie serie pomiarów przy użyciu ADC, jedną używając trybu Noise Reduction, a drugą bez jego użycia (aktywnie czekając na wynik pomiaru w pętli). Dla obu serii policz wariancję pomiarów. Użycie trybu Noise Reduction wymaga odpowiedniej konfiguracji rejestru SMCR, włączenia przerwania ADC oraz usypiania procesora w trakcie pomiaru. [4]

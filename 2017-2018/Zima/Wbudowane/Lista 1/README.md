@@ -1,4 +1,4 @@
-##Lista zadań nr 1
+## Lista zadań nr 1
 1. Zrealizuj efekt przewijającej się diodki na kilku diodach zamontowanych obok siebie na płytce stykowej, jak w serialu Nieustraszony (Knight Rider) albo oczy Cylonów. Maksymalne punkty za elegancką realizację – wszystkie diody na jednym porcie mikrokontrolera, przesuwanie zapalonych diod przez operacje bitowe. [2]
 2. Zbuduj urządzenie które zapamiętuje naciśnięcia i zwolnienia przycisku przez użytkownika, i odtwarza je zapalając i gasząc diodę z 1 sekundowym opóźnieniem. Podpowiedź: zastosuj bufor cykliczny. [2]
 3. Zbuduj wyświetlacz widmowy (ang. persistence of vision, PoV) – zamontuj kilka diod LED jedna obok drugiej na płytce stykowej, i steruj nimi tak, aby poruszając płytką w powietrzu pokazał się jakiś napis. Maksymalne punkty za elegancką realizację – wszystkie diody na jednym porcie mikrokontrolera, wyświetlenie kolumny jednym zapisem do portu, dane do wyświetlenia zapisane w tablicy. [3]

@@ -1,12 +1,13 @@
-# University
-
-## 2016-2017
-- [MP](2016-2017/MP)
-- [.NET](2016-2017/NET)
-- [PO](2016-1017/PO)
-
-## 2017-2018
-- [AISD](2017-2018/Lato/AISD)
-- [ASK](2017-2018/Lato/ASK)
-- [Systemy wbudowane](2017-2018/Zima/Wbudowane)
-- [Unity](2017-2018/Zima/Unity)
+## Lista zadań nr 2
+1. Zbuduj układ realizujący oddychającą diodę LED RGB. Należy wykorzystać timery do modulowania jasności diody. Uwagi:
+	- Kolor diody dla każdego cyklu "oddechu" powinien być losowany. Losowanie osobno wartości kanałów RGB nie jest dobrą metodą losowania kolorów – prowadzi to do częstego losowania kolorów słabo nasyconych lub ciemnych. Najlepiej losować tylko kolory maksymalnie nasycone i maksymalnie jasne, losując tylko składową H z układu HSV.
+	- Zmiana jasności powinna sprawiać wrażenie sinusoidalnej. Należy pamiętać o logarytmicznym postrzeganiu jasności przez wzrok: dioda, której jasność faktycznie zmienia się sinusoidalnie, będzie zdawać się jasna przez większość czasu oraz bardzo szybko gasnąć. Należy wspomóc się funkcją wykładniczą.
+	- Mikrokontrolery z serii Atmega nie posiadają jednostki zmiennoprzecinkowej, operacje na typachdouble i float są emulowane z dużym kosztem wydajnościowym. Warto wykonywać obliczenia stałoprzecinkowe, a np. funkcje trygonometryczne tablicować.
+##### Realizacja każdego z powyższych jest warta 1 punkt z całej oceny. [4]
+2. Używając diody IR i detektora IR zbuduj urządzenie wykrywające zbliżenie obiektu, np. dłoni, i sygnalizujący ten fakt za pomocą diody LED. Dostępny w wypożyczonych zestawach odbiornik IR (OSRB38C9BA) jest czuły na częstotliwość 37,9 kHz: z taką częstotliwością należy migać diodą IR. Miganie diody należy regularnie przerywać i wznawiać – czujnik nie jest przystosowany do fali ciągłej. [3]
+3. Zbuduj układ odtwarzający próbkowany dźwięk (np. jak z jednokanałowego WAV, próbkowanie 8 kHz, 8 bit), na przykład głos "Dzień dobry". Próbki należy wyprowadzać za pomocą wyjścia PWM sterowanego licznikiem, wartość wypełnienia fali prostokątnej ma odpowiadać wartości próbki. Dźwięk można wyprowadzić za pomocą brzęczyka bez generatora (tzn. takiego, który po podpięciu do zasilania nie brzęczy, tylko robi stuk), albo za pomocą głośniczka i prostego układu tranzystorowego wzmacniacza (np. jak tutaj na obrazku 1). Próbki mają być zapisane w pamięci programu. [3]
+4. Zbuduj układ odtwarzający wybraną melodię (minimum pół minuty) z nut. Melodia ma być zapisana w tablicy w pamięci programu, każda nuta ma być opisana jej wysokością (np. C D E F G A H jako liczby 0 do 6) oraz czasem trwania. (Pauzę też można traktować jako nutę). Dźwięk powinien być wyprowadzany przez wyjście sterowane licznikiem w modulacji PFM (stałe wypełnienie 50%, zmienna częstotliwość), można wykorzystać tryb CTC licznika. [3]
+5. Używając licznika (np. 16-bitowego TC1) jako metody pomiaru czasu, zmierz czas (w cyklach) wykonywania różnych operacji matematycznych na różnych typach danych:
+	- Dodawanie, mnożenie, dzielenie i reszta z dzielenia dla typów uint8_t, uint16_t, uint32_t,
+	- Dodawanie, mnożenie, potęgowanie dla typów float i double.
+##### Aby optymalizator nie uprościł badanych operacji, nie należy wykonywać ich na stałych, tylko na zmiennych, których wartość ma być inna dla każdej iteracji pętli mierzącej. Wyniki pomiarów mają być wyprowadzone na wyjście szeregowe. [2]

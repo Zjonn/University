@@ -1,12 +1,13 @@
-# University
-
-## 2016-2017
-- [MP](2016-2017/MP)
-- [.NET](2016-2017/NET)
-- [PO](2016-1017/PO)
-
-## 2017-2018
-- [AISD](2017-2018/Lato/AISD)
-- [ASK](2017-2018/Lato/ASK)
-- [Systemy wbudowane](2017-2018/Zima/Wbudowane)
-- [Unity](2017-2018/Zima/Unity)
+## Lista zadań nr 5
+1. Podłącz układ EEPROM I2C 24C04 do pinów TWI. Zaimplementuj program umożliwiający zapisywanie i odczytywanie danych wewnątrz układu. Możesz wykorzystać przykładowe procedury obsługi I2C zdefiniowane w książce Make: AVR Programming. Komunikacja z programem ma się odbywać przez UART, program powinien obsługiwać następujące polecenia:
+    - read addr – odczyt bajtu z adresu addr,
+    - write addr value – zapis pod adres addr wartości value,
+    - read addr length – odczyt length bajtów od adresu addr, dane należy wypisać w formacie I8HEX,
+    - write – zapis danych, kolejne wiersze powinny zawierać dane w formacie I8HEX.
+##### Zaimplementowanie każdego z podpunktów jest warte jeden punkt. [4]
+2. Wykorzystaj układ drivera LED SCT2168 (do wypożyczenia), aby zrealizować efekt przewijającej się diodki (Knight Rider / oczy Cylonów). Wykorzystanie układu pozwoli na użycie diod świecących bez rezystorów w szeregu. Jako Rext można wykorzystać rezystor 2.2kΩ (2k2). Pin OE/ należy połączyć na stałe z GND, natomiast pin LA/ powinien być sterowany z wybranego pinu wyjściowego zgodnie z obrazkiem "Timing diagram" w nocie katalogowej SCT2168 (str.3). Należy wykorzystać wbudowany w mikrokontroler podsystem SPI (MOSI - SDI, SCK - CLK); sterowanie układem programowo (bit-banging) obniży punktację o 1 punkt. [3]
+3. Zrealizuj za pomocą dwóch Arduino (zadanie można wykonać w dwie osoby) grę typu zgadnij liczbę.
+Pierwsze Arduino (SPI slave) powinno wylosować liczbę M z zakresu 0-99, po czym przy użyciu protokołu SPI odpowiadać na pytania – czy zadana liczba N jest mniejsza, większa czy równa liczbie M? (Można to zrobić przez dwa zapytania na magistrali: w pierwszym master podaje liczbę N, slave odsyła 0; w drugim master wysyła 0, slave odsyła wartość 1/0/-1). Jeśli master zgadł, liczba M powinna zostać wylosowana ponownie.
+Drugie Arduino (SPI master) powinno odczytać przez UART liczbę N z komputera, spytać o nią slave'a, po czym zaprezentować wynik (np. mignąć jedną z trzech diod i napisać komunikat przez UART). [4]
+4. Połącz przewodami wybrane cztery piny Arduino z pinami MISO, MOSI, SCK, SS. Skonfiguruj kontroler SPI jako slave. Napisz program, który będzie programowo (przez odczyty i zapisy wartości pinów – tak zwany bit-banging) pracował jako SPI master i komunikował się z wbudowanym kontrolerem SPI (np. przesyłając kolejno liczby 1, 2, 3...). Odbieraj dane z kontrolera SPI (rejestr SPDR) i sprawdzaj, czy odebrane liczby są równe wysłanym. [2]
+##### Uwaga! Używając wbudowanego kontrolera SPI jako master należy pamiętać o ustawieniu pinów MOSI, SCK i SS (PB3, PB5, PB2) jako wyjścia. (Nota katalogowa Atmega328P, podpunkt 23.3.2).
