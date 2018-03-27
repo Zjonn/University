@@ -130,7 +130,7 @@ long puzzle2(char * r, char * d){
   for(char * res = r; true; res++){
     for(char * c = d; *c != *res; c++){
       if(!(*c))
-        return res - c;
+        return res - d;
     }
   }
 }
