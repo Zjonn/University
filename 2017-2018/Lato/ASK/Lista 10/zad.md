@@ -1,7 +1,7 @@
 ## 1 zad
 ![Alt Text](PNG/1zad.png)
 ## 2 zad
-![Alt Text](PNG/2zad.png)
+![Alt Text](PNG/2zad.PNG)
 #### Może się przydać:
 <a name = "wzorki"></a>
 ![Alt Text](PNG/1zadA.png)
@@ -37,7 +37,7 @@ t = 12 - (2 + 2) = 8
 | FFD   | 1111 1111 1101    |    Tak        | C0 03
 
 ## 3 zad
-![Alt Text](PNG/3zad.png)
+![Alt Text](PNG/3zad.PNG)
 Przydatne [wzorki](#wzorki) były wyżej
 ```
 (tag, index, offset) = (22, 5, 5)
