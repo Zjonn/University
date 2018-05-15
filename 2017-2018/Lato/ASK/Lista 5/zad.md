@@ -130,7 +130,7 @@ long puzzle2(char * r, char * d){
   for(char * res = r; true; res++){
     for(char * c = d; *c != *res; c++){
       if(!(*c))
-        return res - c;
+        return res - d;
     }
   }
 }
@@ -322,8 +322,8 @@ puzzle4(long *a, long v, uint64_t s, uint64_t e):
 
 ```C
 puzzle4(*o, v, s, e) {
-  int m = ((c - s) / 2) + s 	// m = (e + s) / 2
-  if (c < s) 
+  int m = ((e - s) / 2) + s 	// m = (e + s) / 2
+  if (e < s) 
     return -1
   if (a[m] == v) 
     return m
