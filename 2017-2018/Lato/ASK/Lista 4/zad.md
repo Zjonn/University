@@ -207,32 +207,18 @@ puzzle:
 ```C
 int puzzle(long x, unsigned n)
 {
-  if(n == 0)
-    return n;
-
-  x ^= x;
-  n ^= n;
-  for()
+  if(n==0)
+    return 0;
+  if(n>32)
+    n==32;
+  int y = 0;
+  for(int i = 0;i<n;i++)
   {
-    long temp = x;
-    temp &= 1;
-    x += temp;
-    //?
-
-
+    y = y + x & 1;
+    x>>1;
   }
 }
 ```
-## 8 zad
-```C
-if(n==0)
- return 0;
-y = 0;
-if(n>32)n==32;
-for(int i = 0;i<n;i++){
- y = y + x & 1;
- x>>1;
-}
-```
+
 
 
