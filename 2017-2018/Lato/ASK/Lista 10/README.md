@@ -1,7 +1,7 @@
 ## 1 zad
 ![Alt Text](PNG/1zad.png)
 ## 2 zad
-![Alt Text](PNG/2zad.png)
+![Alt Text](PNG/2zad.PNG)
 #### Może się przydać:
 <a name = "wzorki"></a>
 ![Alt Text](PNG/1zadA.png)
@@ -37,7 +37,7 @@ t = 12 - (2 + 2) = 8
 | FFD   | 1111 1111 1101    |    Tak        | C0 03
 
 ## 3 zad
-![Alt Text](PNG/3zad.png)
+![Alt Text](PNG/3zad.PNG)
 Przydatne [wzorki](#wzorki) były wyżej
 ```
 (tag, index, offset) = (22, 5, 5)
@@ -62,8 +62,9 @@ ad3.
 ![Alt Text](PNG/4zadB.png)
 `capacity miss`
 ![Alt Text](PNG/4zadC.png)
-| Adres<sub>(10)</sub>| Adres<sub>(2)</sub> | (tag<sub>22</sub>, index<sub>5</sub>, offset<sub>5</sub>)  | Trafione? 
-| ------------------|-------------------:|:----------------------:|----------
+
+| Adres<sub>(10)</sub>| Adres<sub>(2)</sub> | (tag<sub>22</sub>, index<sub>5</sub>, offset<sub>5</sub>)  | Trafione?
+|--------------------|--------------------:|:----------------------------------------------------------:|----------|
 | 0                 | 0                 | (0, 0, 0)                 | compulsory miss
 | 4                 | 100               | (0, 0, 100)               | **hit!**
 | 16                | 1000              | (0, 0, 1000)              | **hit!**
