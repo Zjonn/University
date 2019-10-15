@@ -10,3 +10,7 @@
 - [ASK](2017-2018/Lato/ASK)
 - [Systemy wbudowane](2017-2018/Zima/Wbudowane)
 - [Unity](2017-2018/Zima/Unity)
+
+## 2018-2019
+- [POO](2018-2019/POO)
+- [Programowanie funkcyjne](2018-2019/Programowanie_funkcyjne)
